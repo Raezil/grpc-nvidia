@@ -1,0 +1,17 @@
+syntax = "proto3";
+package nvidia;
+option go_package = "./nvidia";
+
+service NVIDIA {
+  // gRPC service information
+    rpc Generate(NVIDIARequest) returns (NVIDIAResponse) {}
+}
+
+message NVIDIARequest {
+    string prompt = 1;
+    string model = 2;
+}
+
+message NVIDIAResponse {
+    string result = 1;
+}
