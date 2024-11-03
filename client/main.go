@@ -26,7 +26,6 @@ func main() {
 		Prompt: "Tell me more about golang",
 	}
 
-	// Set a timeout for the request
 	ctx := context.Background()
 
 	// Call the Generate method
